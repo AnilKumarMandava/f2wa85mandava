@@ -1,0 +1,21 @@
+var express=require('express');
+var router = express.Router();
+
+router.get('/',function(req,res,next){
+   var number1=Math.random()+1
+   var number2=Math.random()+2
+   var number3=Math.random()+3
+   var cosfunction=Math.cos(number1);
+   var asinfunction=Math.asin(number2);
+   var asinhfunction=Math.asinh(number3);
+   res.render('computation',
+   {
+    title:'Anil Kumar Mandava computation',
+    number1:number1,
+    number2:number2,
+    number3:number3,
+    cos:cosfunction,
+    asin:asinfunction,
+    asinh:asinhfunction,
+    });
+});
