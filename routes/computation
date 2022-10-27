@@ -19,3 +19,6 @@ router.get('/',function(req,res,next){
     asinh:asinhfunction,
     });
 });
+
+
+module.exports=router;
